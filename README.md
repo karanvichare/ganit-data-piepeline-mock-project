@@ -1,6 +1,7 @@
 # ganit-data-piepeline-mock-project
 
 The Solution is broken down into 3 parts
+
 1> Airflow (airflow-dags Folder)- The airflow dags are written to fetch data from the api and store it in the database
 2> Django Backend(mockProjectBackend Folder) - A backend service to fetch data processed in  the data and pass it to the UI
 3> UI in Angular(ganit-mock-project-ui Folder) - A UI to display visualizations
