@@ -1,0 +1,16 @@
+<div class="header">
+  <img class="logo-icon" src="/assets/logo.png">
+  <h1 class="header-title-text">Ganit Mock Project</h1>
+</div>
+
+<div class="chart-header"> Currency Trend Visualization w.r.t 1 Euro</div>
+
+<div class="select-currency-type">
+  <div class="currency" *ngFor="let currency of currencies" (click)="updateData(currency)" 
+  [ngStyle]="{'background': selectedCurrency===currency?'red':'white'}">
+    {{currency}}
+  </div>
+</div>
+<div class="graph-class">
+  <canvas id="canvas">{{ chart }}</canvas>
+</div>
